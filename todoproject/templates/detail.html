@@ -1,0 +1,9 @@
+{% extend 'base.html' %}
+{% block content %}
+{% load static %}
+<br>
+{% for i in object %}
+{{i.name}}
+{{i.priority}}<br>
+{% endfor %}
+{% endblock %}
